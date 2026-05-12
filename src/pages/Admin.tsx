@@ -1,7 +1,7 @@
 function Admin() {
   return (
     <div>
-      <h1>Admin Dashboard</h1>
+      <h1>Welcome to the Admin Dashboard</h1>
     </div>
   );
 }

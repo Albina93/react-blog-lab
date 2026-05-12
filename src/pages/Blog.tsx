@@ -1,8 +1,17 @@
+import { Link } from "react-router-dom";
+import { posts } from "../lib/posts";
+
 function Blog() {
   return (
     <div>
-      <h1>Blogs</h1>
-      <p>All the blog posts will go here...</p>
+      <h1>Blog</h1>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>
+            <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
